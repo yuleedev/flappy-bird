@@ -1,0 +1,106 @@
+[gd_scene load_steps=18 format=3 uid="uid://cjyexg0kdi7vl"]
+
+[ext_resource type="Texture2D" uid="uid://bxk5t5150oc8i" path="res://technical.png" id="1_5vw27"]
+[ext_resource type="Texture2D" uid="uid://cn4cob7vjdl3x" path="res://technicalh.png" id="2_kek77"]
+[ext_resource type="Texture2D" uid="uid://bkkt0tsueyvua" path="res://billing.png" id="3_4c57u"]
+[ext_resource type="Texture2D" uid="uid://b60mrwfbh7brt" path="res://bilingh.png" id="4_efxa6"]
+[ext_resource type="Texture2D" uid="uid://b763gecrjmxbx" path="res://management.png" id="5_dg77c"]
+[ext_resource type="Texture2D" uid="uid://vub7ueqvghso" path="res://managementh.png" id="6_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cb10fotjyukep" path="res://returns.png" id="7_w48qg"]
+[ext_resource type="Texture2D" uid="uid://cwmaqdu3e6l66" path="res://returnsh.png" id="8_vivmo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2cqfq"]
+texture = ExtResource("1_5vw27")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5vw27"]
+texture = ExtResource("2_kek77")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yaehf"]
+texture = ExtResource("2_kek77")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_074og"]
+texture = ExtResource("3_4c57u")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cegan"]
+texture = ExtResource("4_efxa6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_82xsv"]
+texture = ExtResource("5_dg77c")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_getpj"]
+texture = ExtResource("6_ycdy4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ryguw"]
+texture = ExtResource("7_w48qg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d13ii"]
+texture = ExtResource("8_vivmo")
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="Technical" type="Button" parent="MarginContainer/HBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_2cqfq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5vw27")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yaehf")
+
+[node name="Billing" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_074og")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cegan")
+
+[node name="Management" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_82xsv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_getpj")
+
+[node name="Returns" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxTexture_ryguw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_d13ii")
+
+[node name="Background" type="ColorRect" parent="."]
+z_index = -4000
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.79566103, 0.84806645, 0.9077123, 1)
