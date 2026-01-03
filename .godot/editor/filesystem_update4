@@ -1,3 +1,7 @@
 res://main.tscn
 res://scenes/bird.tscn
 res://scenes/bird.gd
+res://scenes/main.gd
+res://scenes/main.tscn
+res://ground.gd
+res://scenes/pipe.tscn
