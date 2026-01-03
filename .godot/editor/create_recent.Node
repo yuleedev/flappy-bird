@@ -1,5 +1,9 @@
-Control
+CollisionShape2D
+AnimatedSprite2D
+CharacterBody2D
 Sprite2D
+Node
+Control
 Node2D
 ColorRect
 Button
