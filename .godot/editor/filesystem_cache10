@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767397751
-bird.tscn::PackedScene::6889647853753092705::1767397756::0::1::::<><><>0<>0<><>::
+::res://::1767421364
+ground.gd::GDScript::2387140046372039453::1767421364::0::1::::<>Area2D<><>0<>0<><>::
 ::res://assets/::1767397751
 bg.png::CompressedTexture2D::9048544182717606257::1767397616::1767397742::1::::<><><>0<>0<>6f5362e400175ebad04fbce58f8724b2<>res://.godot/imported/bg.png-23a59c2e9cba2223a50fa3fe41b70b25.ctex::
 bird1.png::CompressedTexture2D::3160805883757194881::1767397623::1767397741::1::::<><><>0<>0<>65516284d150079f3369c402e9c4544b<>res://.godot/imported/bird1.png-a83dadb1b9374dc95e0d1b7a95119b58.ctex::
@@ -9,5 +9,11 @@ bird3.png::CompressedTexture2D::8175618410517677703::1767397623::1767397741::1::
 ground.png::CompressedTexture2D::6329886611878233758::1767397623::1767397741::1::::<><><>0<>0<>a982cc678d83afbc2a78f2a8d4be6c1d<>res://.godot/imported/ground.png-328d82a69941a655cdd4638d3455ed11.ctex::
 pipe.png::CompressedTexture2D::3354695547900774733::1767397625::1767397741::1::::<><><>0<>0<>cb4bc7b1559f7716a73a4f8d4ed6a17b<>res://.godot/imported/pipe.png-d1f75b14bde36399e8b8e081ce8a470c.ctex::
 restart.png::CompressedTexture2D::988155398172321528::1767397623::1767397741::1::::<><><>0<>0<>71ff9a2f8b8d0457553aa133a1f86059<>res://.godot/imported/restart.png-e3341f5ab3201ffaa3fc76965a1ab56e.ctex::
-::res://scenes/::1767397751
-main.tscn::PackedScene::5454370321675733317::1767397578::0::1::::<><><>0<>0<><>::
+::res://scenes/::1767422067
+bird.tscn::PackedScene::6889647853753092705::1767416942::0::1::::<><><>0<>0<><>::uid://chlreqoswftc4::::res://scenes/bird.gd<>uid://blbeam3rkdcxt::::res://assets/bird1.png<>uid://c4n0yaye2il0l::::res://assets/bird2.png<>uid://doqligkm15ao2::::res://assets/bird3.png
+main.tscn::PackedScene::5454370321675733317::1767421531::0::1::::<><><>0<>0<><>::uid://g7itueim54b8::::res://scenes/main.gd<>uid://d16gg28suan1j::::res://assets/bg.png<>uid://c5fnq1s6s1ry4::::res://scenes/bird.tscn<>uid://hoqdppqp6yf6::::res://scenes/ground.tscn
+bird.gd::GDScript::5287911623048055541::1767416942::0::1::::<>CharacterBody2D<><>0<>0<><>::
+main.gd::GDScript::487713873011384551::1767422522::0::1::::<>Node<><>0<>0<><>::
+ground.tscn::PackedScene::521200835059618257::1767422522::0::1::::<><><>0<>0<><>::uid://baal33b4jxc8l::::res://ground.gd<>uid://cwgikpxoyv3lq::::res://assets/ground.png
+pipe.tscn::PackedScene::246995759012179850::1767422298::0::1::::<><><>0<>0<><>::uid://bn2bl0pmudy7v::::res://assets/pipe.png<>uid://bcwhvityc3724::::res://scenes/pipe.gd
+pipe.gd::GDScript::2572677652812195315::1767422298::0::1::::<>Area2D<><>0<>0<><>::

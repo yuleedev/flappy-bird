@@ -5,3 +5,5 @@ res://scenes/main.gd
 res://scenes/main.tscn
 res://ground.gd
 res://scenes/pipe.tscn
+res://scenes/pipe.gd
+res://scenes/ground.tscn

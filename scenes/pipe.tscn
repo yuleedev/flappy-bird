@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://drv8ptwxgtio"]
+[gd_scene load_steps=7 format=3 uid="uid://drv8ptwxgtio"]
 
 [ext_resource type="Texture2D" uid="uid://bn2bl0pmudy7v" path="res://assets/pipe.png" id="1_8x3ej"]
+[ext_resource type="Script" uid="uid://bcwhvityc3724" path="res://scenes/pipe.gd" id="1_arpqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arpqm"]
 size = Vector2(79, 37)
@@ -15,6 +16,7 @@ size = Vector2(79, 38)
 size = Vector2(73, 526)
 
 [node name="Pipe" type="Area2D"]
+script = ExtResource("1_arpqm")
 
 [node name="Lower" type="Sprite2D" parent="."]
 texture = ExtResource("1_8x3ej")
@@ -40,3 +42,5 @@ shape = SubResource("RectangleShape2D_ejsh2")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -399)
 shape = SubResource("RectangleShape2D_4ybk5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
